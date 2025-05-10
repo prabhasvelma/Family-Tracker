@@ -58,7 +58,7 @@ app.post('/add', async (req, res) => {
       res.render("index.ejs", {
         countries: result,
         total: result.length,
-        placeholderMessage: "❌ Country already exists"
+        placeholderMessage: " Country already exists"
       });
     }
   } else {
@@ -67,7 +67,7 @@ app.post('/add', async (req, res) => {
     res.render("index.ejs", {
       countries: result,
       total: result.length,
-      placeholderMessage: "❌ Country not found"
+      placeholderMessage: " Country not found"
     });
   }
 });
